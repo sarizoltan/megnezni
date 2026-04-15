@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e8a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0c4f4f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2db8b8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e8a8a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Háttér – lekerekített négyzet -->
+  <rect width="200" height="200" rx="40" ry="40" fill="url(#bg)"/>
+
+  <!-- Belső fény effect -->
+  <rect width="200" height="200" rx="40" ry="40"
+        fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
+
+  <!-- Naptár alap -->
+  <rect x="38" y="58" width="124" height="104" rx="14" ry="14"
+        fill="rgba(0,0,0,0.35)"/>
+  <rect x="38" y="58" width="124" height="104" rx="14" ry="14"
+        fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+
+  <!-- Naptár fejléc sáv -->
+  <rect x="38" y="58" width="124" height="34" rx="14" ry="14"
+        fill="rgba(255,255,255,0.1)"/>
+  <rect x="38" y="78" width="124" height="14"
+        fill="rgba(255,255,255,0.1)"/>
+
+  <!-- Naptár csatok (tetején) -->
+  <rect x="68" y="44" width="10" height="24" rx="5" ry="5"
+        fill="#2db8b8"/>
+  <rect x="122" y="44" width="10" height="24" rx="5" ry="5"
+        fill="#2db8b8"/>
+
+  <!-- Fejléc pontok / hónap jelző -->
+  <circle cx="100" cy="75" r="4" fill="rgba(255,255,255,0.7)"/>
+  <circle cx="115" cy="75" r="3" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="85"  cy="75" r="3" fill="rgba(255,255,255,0.4)"/>
+
+  <!-- Pipa (check) – fő ikon -->
+  <polyline points="62,118 85,141 138,92"
+            fill="none"
+            stroke="url(#glow)"
+            stroke-width="14"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+
+  <!-- Pipa ragyogás -->
+  <polyline points="62,118 85,141 138,92"
+            fill="none"
+            stroke="rgba(255,255,255,0.25)"
+            stroke-width="18"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+  <polyline points="62,118 85,141 138,92"
+            fill="none"
+            stroke="#2db8b8"
+            stroke-width="12"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+</svg>
